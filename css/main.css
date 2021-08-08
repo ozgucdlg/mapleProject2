@@ -1,0 +1,27 @@
+/* GRENERAL SETTINGS */
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Regular.ttf');
+}
+body {
+    background: #fff;
+    color: #3f3f3f;
+    font: 14px / 28px;
+    font-family: 'Raleway', arial;
+
+}
+
+/* GRID  SETTINGS */
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+
+
+}
+
+
+/* HOME  SETTINGS */
+
