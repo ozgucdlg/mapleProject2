@@ -63,12 +63,25 @@ h3{
 
 }
 
-.featuresBody .container {
+.featuresBody .container   {
     justify-content: space-between;
 }
 .col3 {
     flex-grow: 1;
     width:33.33%;
+
+}
+
+.egineBody .container   {
+    justify-content: space-between;
+
+}
+
+.col2 {
+    flex-grow: 1;
+    width:50%;
+    padding:  20px;
+
 
 }
 
@@ -204,4 +217,84 @@ header .logo img {
 
 .itemText p{
     margin: 20px 0;
+}
+
+#parallax {
+    background: linear-gradient(
+        rgba(0,0,0, .7),
+        rgba(0,0,0, .7)
+        ),
+        url('../img/paralax.jpg');
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+
+}
+
+#parallax p {
+    color: #fff;
+}
+
+.engineTop {
+    text-align: center;
+
+}
+
+.engineContainer {
+    position: relative;
+    width: 100%;
+}
+
+.imageOver{
+    display: block;
+    width: 100%;
+    height: auto;
+
+
+}
+
+.engineOverlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(80,13,22, 0.7);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition:  0.5s ease;
+}
+
+.engineContainer:hover .engineOverlay {
+    width: 100%;
+
+}
+
+.engineText{
+    white-space: nowrap;
+    color: #fff;
+    font: size 20px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.engineOverlay2 {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background-color: rgba(80,13,22, 0.7);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition:  0.5s ease;
+}
+
+.engineContainer:hover .engineOverlay2 {
+    width: 100%;
+    left: 0;
+
 }
