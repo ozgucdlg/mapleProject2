@@ -515,11 +515,265 @@ footer p {
     background: rgba(0,0, 0, .8);
 }
 
+#ourHistory {
+    background-color:  #f5f5f5;    
+}
+
+.ourHistoryTop {
+    text-align: center;
+}
+
+.ourHistoryBody .containerFluid {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:20px;
+
+}
+
+.ourHistoryBody .col2 {
+    display: flex;
+
+}
+
+.ourHistoryDate {
+    flex: 1;
+    text-align: center;
+    background-color: #500D16;
+    color: #fff;
+}
+
+.ourHistoryDate p {
+    font-size: 30px;
+    letter-spacing:2px;
+    position:relative;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.ourHistoryImage {
+    flex: 2;
+
+}
+.ourHistoryImage img {
+    width: 100%;
+    height: 100%;
+}
+
+.ourHistoryText {
+    flex: 3;
+    margin-left: 10px;
+
+}
+.ourHistoryText p {
+    position:relative;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.teamTop {
+    text-align: center;
+}
+
+.teamBody .containerFluid {
+    display: flex;
+    width: 100%;
+}
+.teamMember {
+    position: relative;
+    width: 100%;
+
+}
+
+.teamMemberImg {
+    display:block;
+    width: 100%;
+    height:100%;
+}
+
+.teamMemberOverlay {
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    height:100%;
+    width: 100%;
+    opacity: 1;
+    background-color: #500D16;
+    transition:  0.5s ease;
+
+}
+
+.teamMember:hover .teamMemberOverlay {
+    opacity: 0;
+}
+
+.teamMember:hover  .teamMemberInfo   {
+    color: #fff;
+    font-size:  20px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.teamTitle {
+    color: #fff;
+    font-size:  20px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.teamMemberInfo {
+    color: #fff;
+    background-color: rgba(80, 13, 22, .7);
+    position: absolute;
+    top:0;
+    left:50%;
+    transform: translateX(-50%);
+    transition: .5s ease;
+    pad: 20px;
+    text-align: center;
+}
+
+.memberSocialLinks {
+    text-align: center;
+
+}
+.memberSocialLinks li {
+    display: inline;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+.memberSocialLinks .fa {
+    color: #fff;
+}
+
+/* Contact SETTINGS */
+
+#contactSlider {
+    height: 550px;
+    background: url(../img/contact.jpg) center center no-repeat; 
+    background-size: cover;
+}
+
+.contactSlider{
+    width:100%;
+}
+
+#contactCaption {
+    width:550px;
+    background: rgba(0,0, 0, .8);
+}
+#gallery{
+    background-color :#f5f5f5;
+}
+
+.galleryTop{
+    text-align: center;
+}
+
+.gallerySlider {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+
+}
+.gallerySliderItem {
+    width: 300%;
+    position: relative;
+    left: 0;
+    animation: slideAnimation 30s infinite;
+
+}
+
+.gallerySliderItem img {
+    width: 33.33%;
+    float: left;
+    height: auto;
 
 
+}
+
+@keyframes slideAnimation {
+    0% { left: 0; }
+    25% { left: -100; }
+    50% { left: -200%; }     
+    75% { left: -100%;}
+    100% { left: 0; }
+       
+}
+
+.contactTop{
+    text-align: center;
+}
+
+.wrapper{
+    margin:0 auto;
+    width: 100%;    
+}
+.contactForm {
+    margin:0 auto;
+    width:60%;    
+}
+
+.formItem {
+    margin-bottom: 10px;
+    width: 100%;
+
+}
+
+.formShape {
+    color: #fff;
+    float: left;
+    background:#500D16;
+    padding:8px;
+    width: 8%;
+    text-align: center;   
+
+}
+.formField {
+    color: #fff;
+    background:#e4dcd4;
+    border: none;
+    padding:15.5px;
+    width: 92%;
+    display: block;
+    font-size:14px;
+}
+
+.formBtn{
+    display: block;
+    border: none;
+    background: #500D16;
+    color: #fff;
+    padding:12px 25px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight:bold;
+    border-radius: 15px 15px 15px 0px;
+}
+.formBtn:hover{
+    background: #841916;
+}
 
 
+/*  MEDIA QURIES*/
 
+@media screen and (max-width: 960px) {
+    .caption h1{
+        color:red;
+        font-size:32px;
+        letter-spacing: 2px;
+    }    
+}
 
 
 
