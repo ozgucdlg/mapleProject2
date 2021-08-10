@@ -424,7 +424,7 @@ footer p {
 
  }
 
- .projectTop{
+ .projectXTop{
      text-align: center;
  }
 
@@ -493,12 +493,27 @@ footer p {
 .projectXDetail li:hover{
     background-color: #fff;
     color:#500D16;
-
 }
 
 
 
+/* ABOUT SETTINGS */
 
+
+#aboutSlider {
+    height: 1100px;
+    background: url(../img/aboutPage.jpg) center top no-repeat; 
+    background-size: cover;
+}
+
+.aboutSlider{
+    width:100%;
+}
+
+#aboutCaption {
+    width:600px;
+    background: rgba(0,0, 0, .8);
+}
 
 
 
