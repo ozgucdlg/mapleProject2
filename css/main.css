@@ -117,11 +117,11 @@ header .logo img {
 }
 
 .slider{
-    width:100%;
+    width: 100%;
 }
 
 #mainCaption {
-    width:600px;
+    height: 600px;
     background: rgba(0,0, 0, .5);
 }
 
@@ -347,6 +347,9 @@ footer p {
 }
 
 
+
+
+
 /* CARS SETTINGS */
 
 #carsSlider {
@@ -360,7 +363,7 @@ footer p {
 }
 
 #carsCaption {
-    width:600px;
+    height:700px;
     background: rgba(0,0, 0, .8);
 }
 
@@ -490,7 +493,7 @@ footer p {
 
 
 #aboutSlider {
-    height: 1100px;
+    height: 800px;
     background: url(../img/aboutPage.jpg) center top no-repeat; 
     background-size: cover;
 }
@@ -500,8 +503,13 @@ footer p {
 }
 
 #aboutCaption {
-    width:600px;
+    height:800px;
     background: rgba(0,0, 0, .8);
+}
+
+.caption p {
+    width: 800px;
+    text-align: center;
 }
 
 #ourHistory {
@@ -658,7 +666,7 @@ footer p {
 }
 
 #contactCaption {
-    width:550px;
+    height:550px;
     background: rgba(0,0, 0, .8);
 }
 #gallery{
@@ -667,7 +675,7 @@ footer p {
 
 .galleryTop{
     text-align: center;
-}
+} 
 
 .gallerySlider {
     overflow: hidden;
