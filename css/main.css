@@ -829,12 +829,57 @@ footer p {
         flex-direction: column;
 
     }
-
     .footer  .container .col3 {
         width: 100%;
         
+    } 
+    .sectionHeader {
+        font-size:24px;
+
+    }  
+
+    .inspectBody .container .col2{
+        padding-left:0;
+        padding-right:0;
+
     }
-    
+    .teamMemberInfo {
+        font-size:14px;
+        padding: 10px;
+        
+    }
+    .teamTitle {
+        font-size:14px;
+
+    }
+    .formShape {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 540px) {
+
+    .caption h1 {        
+        font-size:20px;
+        letter-spacing: 2px;
+    }
+    .featuresBody .container .col3 {
+        width: 100%;
+        margin: 0 auto;       
+
+    }
+
+    .engineBody .container .col2{
+        width: 100%;
+
+    }
+    .sectionHeader {
+        font-size: 20px;
+    }
+    .contactForm {
+        width: 80%;
+    }
 
 
 }
