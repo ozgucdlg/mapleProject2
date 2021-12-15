@@ -19,7 +19,8 @@ h1{
 }
 
 
-.sectionHeader {
+.sectionHeader, .sectionHeaderSills, .sectionHeaderBonding, .sectionHeaderSurrounds
+, .sectionHeaderWallsPanel, .sectionHeaderSheer {
     background-color: #550D16;
     border-bottom: 6px solid #000;
     height: 60px;
@@ -86,17 +87,20 @@ header .logo {
 header .logo img {
     display: block;
     height:70px;
-
 }
 
-.menu li {
+
+
+.menu ul li {
     float: left;
-
+    position: relative;   
+   
 }
 
-.menu li a {
+.menu ul li a {    
     padding: 27px 17px;
-    display: block;
+    display: block;    
+    width: 95px;    
     text-decoration: none;
     letter-spacing: 2px;
     color: #333333;
@@ -104,11 +108,40 @@ header .logo img {
     
 }
 
-.menu li:hover a {
+.menu ul li  a:hover  {
+    background:#500D16;
+    color: #fff;   
+}
+
+.menu ul li ul{
+    display:none;
+    position: absolute;
+    color: white;
+       
+}
+.menu ul li:hover ul {
+    display: block;
     background:#500D16;
     color: #fff;
-
 }
+
+.menu ul li ul li a  {
+    background:#500D16;
+    color: #fff;   
+}
+
+.menu ul li ul li  a:hover  {
+    background:#500D16;
+    color: #fff; 
+    font-size: 17px;  
+    transition: all 0.3s ease;
+}
+
+
+
+
+
+  
 
 #mainSlider {
     height: 600px;
@@ -378,36 +411,75 @@ footer p {
      display: flex;
  }
 
+ .categoryGroup{
+     padding:3px;
+     display:flex;
+     flex-direction: row;
+     border: 3px solid #500D16;
+     border-radius:15px;
+
+ }
+
  .inspectImage{
      width: 40%;
+     
  }
  .inspectImage img{
      width:100%;
-     height: auto;
+     height: 350px; 
+     border-radius: 10px;
  }
+ /* .inspectImage img:hover{
+     width: 600px !important;
+     height: 600px !important;
+     z-index: 1;
+     transition: all 0.5s ease;
+ } */
 
  .inspectText{
      width:60%;
      padding-left: 10px;
+     
 
  }
 
  .date{
-     color: #333333;
+     color: #ffffff;
      font-size:12px;
-     font-style: italic;
+     font-style: italic;     
+     margin-right: 10px;
+     padding-left: 10px;
+     border-radius:10px 10px 0 0 ;
+     background: #500D16;
+     z-index: -1;
+    
+     
+     
+
  }
 
  h4{
-     color :#550D16;
+     color :#f5f5f5;
      font-size:14px;
      font-weight:bold;
+     border-bottom: 5px solid #500D16;
+     text-align: center;
+     margin-right: 10px;
+     border-radius:0 0 10px 10px  ;
+     background: #500D16;
+     
  }
-
+.categoryText{
+    padding-top: 40px;
+    text-align: justify;
+    padding-right: 13px;
+}
  .inspectText a{
      float: right;
      text-decoration: none;
      color: #500D16;
+    
+
 
  }
 
@@ -599,7 +671,7 @@ footer p {
     height:100%;
     width: 100%;
     opacity: 1;
-    background-color: #500D16;
+    background-color: #e7c9a76b;
     transition:  0.5s ease;
 
 }
@@ -737,7 +809,7 @@ footer p {
 
 }
 .formField {
-    color: #fff;
+    color: rgb(77, 13, 13);
     background:#e4dcd4;
     border: none;
     padding:15.5px;

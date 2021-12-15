@@ -1,129 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    
+
     <meta http-equiv="X-UA-Compatible" content="Maple">
     <meta name="descriptipn" content="Maple">
     <meta name="author" content="ozgucdlg">
     <meta name="keywords" content="MapleWEB">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>MAPLEPRECAST - About</title>
+    <title>MAPLEPRECAST - Home</title>
 
-    <link rel="stylesheet"  type="text/css"  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> >
+    <link rel="stylesheet" type="text/css"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
 
-    <link rel="stylesheet"  type="text/css"  href="css/reset.css">  
-    <link rel="stylesheet"  type="text/css"  href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
+
 <body>
 
 
 
-<header>
-    <div class="container">
-        <div class="logo">
-            <a  href="index.html"><img src="img/logo.jpg"></a>
+    <header>
+        <div class="container">
+            <br>
+            <div class="logo">
+                <a href="index.html"><img src="img/YENILOGO.jpg" 
+                style="border-radius:0 20px 0 20px; 
+                box-shadow: 2px 6px 1px #500D16"> </a>
+            </div>
+    
+            <div class="menu">
+                <ul>
+                    <li> <a href="index.html"> HOME </a></li>
+                    <li> <a href="products.html"> PRODUCTS </a>
+                        <ul>
+                            <li>
+                            <a href="products.html" >SILLS</a>
+                            <a href="products.html">BANDING </a>
+                            <a href="products.html">SURROUNDS</a>
+                            <a href="products.html">WALL PANELS</a>
+                            <a href="products.html">SHEER PANELS</a>
+                            </li>
+                       </ul>
+                    </li>
+                    <li> <a href="about.html"> ABOUT </a></li>
+                    <li> <a href="contact.html"> CONTACT </a></li>
+                </ul>
+    
+            </div>
         </div>
-
-        <div class="menu">
-            <ul>
-                <li> <a href="index.html"> HOME  </a></li>
-                <li> <a href="products.html"> PRODUCTS  </a></li>
-                <li> <a href="about.html"> ABOUT  </a></li>
-                <li> <a href="contact.html"> CONTACT  </a></li>
-            </ul>
-
-        </div>
-    </div>
-</header>
-
+    </header>
 <!-- MAIN SECTION-->
 <section id="contactSlider"  class="slider">
-<div id="contactCaption" class="caption">
-    <h1> CONTACT</h1>
-    <p> Let's get step up towards your Dreams</p>
-</div>
+    <div id="contactCaption" class="caption">
+        <h1> CONTACT</h1>
+        <p> Let's get step up towards your Dreams</p>
+    </div>
+        
+    </section>
     
-</section>
-
-
-<!-- Gallery SECTION-->
-<section id="gallery" class="sectionArea">
-    <div class="galleryTop">
-        <h2 class="sectionHeader"> GALLERY</h2>
-        <p> Let's get step up towards your Dreams</p>
-    </div>    
-
-    <div class="galleryBody">
-        <div class="container">
-            <div class="gallerySlider">
-                <div class="gallerySliderItem">                    
-                    <img src="img/slider2.jpg">
-                    <img src="img/slider1.jpg">
-                    <img src="img/slider3.jpg">                    
-
+    
+    <!-- Gallery SECTION-->
+    <section id="gallery" class="sectionArea">
+        <div class="galleryTop">
+            <h2 class="sectionHeader"> GALLERY</h2>
+            <p> Let's get step up towards your Dreams</p>
+        </div>    
+    
+        <div class="galleryBody">
+            <div class="container">
+                <div class="gallerySlider">
+                    <div class="gallerySliderItem">                    
+                        <img src="img/slider2.jpg">
+                        <img src="img/slider1.jpg">
+                        <img src="img/slider3.jpg">                    
+    
+                    </div>
+    
                 </div>
-
+            </div>
+    
+        </div>
+    
+    </section>
+    
+    
+    
+    <!-- FORM SECTION-->
+    
+    
+    <section id="sectionArea">
+        <div class="contactTop">
+            <h2 class="sectionHeader"> CONTACT US</h2>
+            <p> Let's get step up towards your Dreams</p>
+        </div>   
+    
+        <div class="contactBody">
+            <div class="container">
+                <div class="wrapper">
+                    <form  class="contactForm"  action="/posts/test"  method="post">
+    
+                        <div class="formItem">
+                            <span class="formShape"> <i class="fa fa-user fa-2x"></i></span>
+                            <input class="formField" name="fullname" type="text" placeholder="Fullname *" required>
+                        </div>
+                        <div class="formItem">
+                            <span class="formShape"> <i class="fa fa-envelope fa-2x"></i></span>
+                            <input class="formField"  name="email"  type="email" placeholder="e-mail *" required>
+                        </div>
+                        <div class="formItem">
+                            <span class="formShape"> <i class="fa fa-mobile fa-2x"></i></span>
+                            <input class="formField" name="phone" type="text" placeholder="Phone *" >
+                        </div>
+                        <div class="formItem">
+                            <span class="formShape"> <i class="fa fa-info fa-2x"></i></span>
+                            <input class="formField" name="subject" type="text" placeholder="Subject *" required>
+                        </div>
+                        <div class="formItem">
+                            <span class="formShape"> <i class="fa fa-comment fa-2x"></i></span>
+                            <textarea class="formField" name="message" rows="8" placeholder="Message *"></textarea>
+                        </div>
+                        <div  class="formItem">
+                            <input class="formBtn" type="submit" value="Submit">
+                        </div>
+    
+                    </form>
+                </div>
             </div>
         </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- FORM SECTION-->
-
-
-<section id="sectionArea">
-    <div class="contactTop">
-        <h2 class="sectionHeader"> CONTACT US</h2>
-        <p> Let's get step up towards your Dreams</p>
-    </div>   
-
-    <div class="contactBody">
-        <div class="container">
-            <div class="wrapper">
-                <form  class="contactForm">
-
-                    <div class="formItem">
-                        <span class="formShape"> <i class="fa fa-user fa-2x"></i></span>
-                        <input class="formField" type="text" placeholder="Fullname *" required>
-                    </div>
-                    <div class="formItem">
-                        <span class="formShape"> <i class="fa fa-envelope fa-2x"></i></span>
-                        <input class="formField" type="email" placeholder="e-mail *" required>
-                    </div>
-                    <div class="formItem">
-                        <span class="formShape"> <i class="fa fa-mobile fa-2x"></i></span>
-                        <input class="formField" type="text" placeholder="Phone *" >
-                    </div>
-                    <div class="formItem">
-                        <span class="formShape"> <i class="fa fa-info fa-2x"></i></span>
-                        <input class="formField" type="text" placeholder="Subject *" required>
-                    </div>
-                    <div class="formItem">
-                        <span class="formShape"> <i class="fa fa-comment fa-2x"></i></span>
-                        <textarea class="formField" rows="8" placeholder="Message *"></textarea>
-                    </div>
-                    <div  class="formItem">
-                        <input class="formBtn" type="submit" value="Submit">
-                    </div>
-
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
-
+    </section>
 
 <!-- FOOTER SECTION-->
-
 <footer class="sectionArea">
     <div class="container">
-        
+
 
         <div class="col3">
             <div class="footerItem">
@@ -133,34 +146,38 @@
                     <li><a href="products.html">PRODUCTS</a></li>
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="contact.html">CONTACTS</a></li>
-                </ul>        
-             </div>
+                </ul>
+            </div>
         </div>
 
         <div class="col3">
             <div class="footerItem">
                 <h3>WELCOME TO OUR SITE</h3>
-                <a href="index.html"><img src="img/logo.jpg"></a>
-                <p>MAPLE PRECAST LTD<br /><a href="https://www.google.ca/maps/place/94+Fenmar+Dr,+North+York,+ON+M9L+1M5/@43.7595234,-79.5496685,17z/data=!3m1!4b1!4m5!3m4!1s0x882b301a9ec008b3:0xc45bb2063998f4ed!8m2!3d43.7595234!4d-79.5474798">94 Fenmar Drive,North York, ON M9L 1M5</a><br />Tel:
-                    (416) 749 3336 <br /> mapleprecastltd@gmail.com</p>
+                <a href="index.html"><img src="img/YENILOGO.jpg" style="border-radius:0 20px 0 20px"></a>
+                <p>MAPLE PRECAST LTD<br /><a
+                href="https://www.google.ca/maps/place/94+Fenmar+Dr,+North+York,+ON+M9L+1M5/@43.7595234,-79.5496685,17z/data=!3m1!4b1!4m5!3m4!1s0x882b301a9ec008b3:0xc45bb2063998f4ed!8m2!3d43.7595234!4d-79.5474798">94
+                Fenmar Drive,North York, ON M9L 1M5</a><br />Tel:
+                (416) 749 3336 <br /> mapleprecastltd@gmail.com</p>
             </div>
         </div>
+
+        
 
         <div class="col3">
             <div class="footerItem">
                 <h3>BE SOCIAL WITH US</h3>
                 <ul class="socialLinks">
                     <li><a href="https://www.instagram.com/mapleprecast/"  target ="_blank"><i class="fa fa-instagram "></i></a></li>
-                        <li><a href="https://www.facebook.com/Concrete.Precast" target ="_blank"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/maple-precast-13b5aa212/" target ="_blank"><i class="fa fa-linkedin"></i></a></li>                
-                    
-                </ul>        
-             </div>
+                    <li><a href="https://www.facebook.com/Concrete.Precast" target ="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/maple-precast-13b5aa212/" target ="_blank"><i class="fa fa-linkedin"></i></a></li>
+
+                </ul>
+            </div>
         </div>
     </div>
 
 </footer>
 
-
 </body>
-</html> 
+
+</html>
