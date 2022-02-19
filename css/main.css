@@ -5,10 +5,13 @@
     src: url('../fonts/Raleway-Regular.ttf');
 }
 body {
+
+    width: 100%;
     background: #fff;
     color: #3f3f3f;
     font: 14px / 28px arial;
     font-family: 'Raleway';
+    overflow: hidden;
 
 }
 
@@ -47,7 +50,7 @@ h3{
 /* GRID  SETTINGS */
 
 .container {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
 
@@ -93,7 +96,8 @@ header .logo img {
 
 .menu ul li {
     float: left;
-    position: relative;   
+    position: relative; 
+     
    
 }
 
@@ -133,7 +137,7 @@ header .logo img {
 .menu ul li ul li  a:hover  {
     background:#500D16;
     color: #fff; 
-    font-size: 17px;  
+    font-size: 15px;  
     transition: all 0.3s ease;
 }
 
@@ -161,7 +165,7 @@ header .logo img {
 .caption {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:center;
     justify-content: center;
     width: 100%;
     color: #fff;
@@ -865,7 +869,7 @@ footer p {
     }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 740px) {
 
 
     header .container{
@@ -879,7 +883,8 @@ footer p {
 
 
     .caption h1{
-        color:red;
+       
+        color:white;
         font-size:28px;
         letter-spacing: 2px;
 
@@ -938,8 +943,95 @@ footer p {
 
 }
 
+
+
+
+
+
+
+
+
+
+
+/*  MOBILE   */
+
+
+
+
 @media screen and (max-width: 540px) {
 
+    body{
+        float: left;
+    }
+
+
+  /* yeni yapildi   INDEX PAGE */
+
+
+
+
+
+
+  /*  navigation bar */
+    .menu
+  {
+    width: 100%;   /* 390px*/
+    /* background-color: red; */
+    margin-top:10px;    
+    position: relative;
+    
+} ul {
+    
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    
+}
+
+li{
+      position : relative;
+      font-size:11px;
+      width:95px;          
+  }
+  .menu ul li a {    
+         
+    width: 85px;    
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: #500D16;
+    transition: all 0.5s ease;
+    
+}
+
+.menu  ul li  a:hover  {
+    background:#500D16;
+    color: #fff;     
+    display: block;    
+    width: 75px;  
+}
+/* yeni eklendi*/
+.menu ul li ul li  a:hover  {
+    background:#500D16;
+    color: #fff; 
+    width: 75px; 
+    font-size: 17px;  
+    transition: all 0.3s ease;
+
+    
+}
+/* yeni eklendi*/
+.menu ul li ul li  a:hover p{
+    font-size: 11px;
+   
+}
+
+
+
+
+
+
+
+/*  Index  sayfasi  */
     .caption h1 {        
         font-size:20px;
         letter-spacing: 2px;
@@ -950,11 +1042,30 @@ footer p {
 
     }
 
+
+    /* yeni eklendi */
+    .caption {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: flex-end;
+        width: 100%;
+        color: #fff;
+    
+    }
+        /* yeni eklendi */
+    #mainSlider {
+        height: 600px;
+        background: url(../img/sampleRender.jpg) center center  no-repeat; 
+        background-size: cover;
+    }
+    
     .engineBody .container .col2{
         width: 100%;
 
     }
     .sectionHeader {
+        
         font-size: 20px;
     }
     .contactForm {
