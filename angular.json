@@ -25,6 +25,7 @@
               "src/assets"
             ],
             "styles": [
+              "src/tailwind-output.css",
               "src/styles.css"
             ],
             "scripts": []
